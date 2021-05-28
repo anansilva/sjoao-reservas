@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
+  gem 'pry-byebug'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -35,6 +36,11 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'factory_bot_rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
